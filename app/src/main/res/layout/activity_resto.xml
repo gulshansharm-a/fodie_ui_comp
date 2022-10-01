@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EDEDED"
+    android:layout_height="match_parent"
+    tools:context=".ui.restoinfo.RestoActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:text="Resto Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+
+        android:background="@drawable/button_search"
+        android:hint="Search"
+        android:padding="10dp"
+        android:paddingStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/editText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="BreakFast"
+                    android:textColor="#FA4A0C" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center"
+                    android:background="#FA4A0C"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:padding="10dp"
+                android:text="lunch"
+                android:textColor="#9A9A9D" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:padding="10dp"
+                android:text="dinner"
+                android:textColor="#9A9A9D" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:padding="10dp"
+                android:text="combos"
+                android:textColor="#9A9A9D" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:padding="10dp"
+                android:text="combos"
+                android:textColor="#9A9A9D" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="wrap_content"
+
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/layout"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="10dp">
+
+
+                        <TextView
+                            android:id="@+id/textViews12"
+                            android:layout_width="156dp"
+                            android:layout_height="212dp"
+                            android:layout_marginTop="80dp"
+                            android:background="@drawable/round_tv"
+                            android:shadowColor="#000"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circleImageViews12"
+                            android:layout_width="128dp"
+                            android:layout_height="128dp"
+                            android:layout_marginBottom="200dp"
+                            android:src="@drawable/food_image"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/textViews12" />
+
+                        <TextView
+                            android:id="@+id/textView2s12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Veggie \n tomato mix"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="22dp"
+                            app:fontFamily="@font/abril_fatface"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/circleImageViews12" />
+
+                        <TextView
+                            android:id="@+id/textView3s12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="N1,900"
+                            android:textColor="#FA4A0C"
+                            android:textSize="17dp"
+                            app:fontFamily="@font/b612_bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2s12" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="10dp">
+
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="156dp"
+                            android:layout_height="212dp"
+                            android:layout_marginTop="80dp"
+                            android:background="@drawable/round_tv"
+                            android:shadowColor="#000"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circleImageView"
+                            android:layout_width="128dp"
+                            android:layout_height="128dp"
+                            android:layout_marginBottom="200dp"
+                            android:src="@drawable/food_image"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/textView" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Veggie \n tomato mix"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="22dp"
+                            app:fontFamily="@font/abril_fatface"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="N1,900"
+                            android:textColor="#FA4A0C"
+                            android:textSize="17dp"
+                            app:fontFamily="@font/b612_bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="10dp">
+
+
+                        <TextView
+                            android:id="@+id/textViews11"
+                            android:layout_width="156dp"
+                            android:layout_height="212dp"
+                            android:layout_marginTop="80dp"
+                            android:background="@drawable/round_tv"
+                            android:shadowColor="#000"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circleImageViews11"
+                            android:layout_width="128dp"
+                            android:layout_height="128dp"
+                            android:layout_marginBottom="200dp"
+                            android:src="@drawable/food_image"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/textViews11" />
+
+                        <TextView
+                            android:id="@+id/textView2s11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Veggie \n tomato mix"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="22dp"
+                            app:fontFamily="@font/abril_fatface"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/circleImageViews11" />
+
+                        <TextView
+                            android:id="@+id/textView3s11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="N1,900"
+                            android:textColor="#FA4A0C"
+                            android:textSize="17dp"
+                            app:fontFamily="@font/b612_bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2s11" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="10dp">
+
+
+                        <TextView
+                            android:id="@+id/textViews12l"
+                            android:layout_width="156dp"
+                            android:layout_height="212dp"
+                            android:layout_marginTop="80dp"
+                            android:background="@drawable/round_tv"
+                            android:shadowColor="#000"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circleImageViews12l"
+                            android:layout_width="128dp"
+                            android:layout_height="128dp"
+                            android:layout_marginBottom="200dp"
+                            android:src="@drawable/food_image"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/textViews12l" />
+
+                        <TextView
+                            android:id="@+id/textView2s12l"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Veggie \n tomato mix"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="22dp"
+                            app:fontFamily="@font/abril_fatface"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/circleImageViews12l" />
+
+                        <TextView
+                            android:id="@+id/textView3s12l"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="N1,900"
+                            android:textColor="#FA4A0C"
+                            android:textSize="17dp"
+                            app:fontFamily="@font/b612_bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2s12l" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="10dp">
+
+
+                        <TextView
+                            android:id="@+id/textViewl"
+                            android:layout_width="156dp"
+                            android:layout_height="212dp"
+                            android:layout_marginTop="80dp"
+                            android:background="@drawable/round_tv"
+                            android:shadowColor="#000"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circleImageViewl"
+                            android:layout_width="128dp"
+                            android:layout_height="128dp"
+                            android:layout_marginBottom="200dp"
+                            android:src="@drawable/food_image"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/textViewl" />
+
+                        <TextView
+                            android:id="@+id/textView2l"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Veggie \n tomato mix"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="22dp"
+                            app:fontFamily="@font/abril_fatface"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/circleImageViewl" />
+
+                        <TextView
+                            android:id="@+id/textView3l"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="N1,900"
+                            android:textColor="#FA4A0C"
+                            android:textSize="17dp"
+                            app:fontFamily="@font/b612_bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2l" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="10dp">
+
+
+                        <TextView
+                            android:id="@+id/textViews11l"
+                            android:layout_width="156dp"
+                            android:layout_height="212dp"
+                            android:layout_marginTop="80dp"
+                            android:background="@drawable/round_tv"
+                            android:shadowColor="#000"
+                            android:shadowDx="-2"
+                            android:shadowDy="-2"
+                            android:shadowRadius="1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circleImageViews11l"
+                            android:layout_width="128dp"
+                            android:layout_height="128dp"
+                            android:layout_marginBottom="200dp"
+                            android:src="@drawable/food_image"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/textViews11l" />
+
+                        <TextView
+                            android:id="@+id/textView2s11l"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Veggie \n tomato mix"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="22dp"
+                            app:fontFamily="@font/abril_fatface"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/circleImageViews11l" />
+
+                        <TextView
+                            android:id="@+id/textView3s11l"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="N1,900"
+                            android:textColor="#FA4A0C"
+                            android:textSize="17dp"
+                            app:fontFamily="@font/b612_bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2s11l" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/editText">
+
+        <ScrollView
+            android:id="@+id/scrollView3l"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
