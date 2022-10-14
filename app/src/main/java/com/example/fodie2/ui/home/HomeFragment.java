@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.fodie2.R;
 import com.example.fodie2.databinding.FragmentHomeBinding;
+import com.example.fodie2.ui.restoinfo.FoodItemActivity;
 import com.example.fodie2.ui.restoinfo.RestoActivity;
 
 public class HomeFragment extends Fragment {
@@ -28,7 +29,13 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         getActivity().findViewById(R.id.autoComplete).setVisibility(View.INVISIBLE);
-
+        binding.layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), FoodItemActivity.class);
+                startActivity(i);
+            }
+        });
         binding.seemore.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -37,9 +44,6 @@ public class HomeFragment extends Fragment {
                         startActivity(i);
                     }
                 });
-
-        //        final TextView textView = binding.textHome;
-//        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
     @Override

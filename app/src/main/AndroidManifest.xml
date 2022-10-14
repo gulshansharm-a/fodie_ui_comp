@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fodie2">
         <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.restoinfo.WatingTimeActivity"
             android:exported="false" />
         <activity

@@ -3,17 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/drawable/ic_baseline_map_24.xml" value="0.1" />
         <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/drawable/orange_button_background.xml" value="0.168" />
         <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/drawable/round_tv.xml" value="0.116" />
+        <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/layout/activity_cart.xml" value="0.264" />
         <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/layout/activity_food_item.xml" value="0.2" />
         <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/layout/activity_home.xml" value="0.12158054711246201" />
         <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/layout/activity_resto.xml" value="0.25" />
+        <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/layout/activity_payment.xml" value="0.152" />
+        <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/layout/activity_resto.xml" value="0.2" />
         <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/layout/activity_restu_item_search.xml" value="0.10925925925925926" />
         <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/layout/activity_tab.xml" value="0.13768115942028986" />
-        <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/layout/activity_wating_time.xml" value="0.136" />
+        <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/layout/fragment_home.xml" value="0.136" />
         <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/layout/fragment_maps.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/layout/fragment_notifications.xml" value="0.176" />
         <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/layout/fragment_tab.xml" value="0.1" />
         <entry key="..\:/Users/Gulshan/AndroidStudioProjects/fodie22/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2351851851851852" />
       </map>
@@ -24,5 +30,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.136" />
+      </ProjectState>
+    </option>
   </component>
 </project>

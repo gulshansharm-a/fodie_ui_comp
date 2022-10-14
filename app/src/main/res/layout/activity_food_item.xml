@@ -83,16 +83,17 @@
         app:layout_constraintTop_toBottomOf="@+id/infotext" />
 
     <Button
+        android:id="@+id/add_to_cart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="50dp"
-        android:id="@+id/add_to_cart"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
 
         android:background="@drawable/orange_button_background"
-        android:text="Add to cart"
         android:padding="10dp"
+        android:text="Add to cart"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/infotext_des"
         app:layout_constraintStart_toStartOf="@+id/infotext_des"
         app:layout_constraintTop_toBottomOf="@+id/infotext_des" />
